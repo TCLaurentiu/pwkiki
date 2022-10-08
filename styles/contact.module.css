@@ -1,0 +1,14 @@
+.contactLabel{
+    background:yellowgreen;
+    border-radius:5px;
+    padding:2px;
+    margin-right:5px;
+    box-shadow:var(--shadow);
+}
+.contactItem{
+    margin:20px;
+}
+.contactContainer{
+    background:rgb(0,0,0,.5);
+    padding:20px;
+}
