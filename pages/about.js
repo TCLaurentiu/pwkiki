@@ -1,10 +1,17 @@
 import styles from "../styles/about.module.css";
+import Link from "next/link";
 export default function () {
   return (
     <>
       <div className={styles.mini_title}>
         <span>About the game</span>
-        <button className={`${styles.reserveButton} ${styles.reserveButtonTop}`}>Book now!</button>
+        <Link href="/book">
+          <button
+            className={`${styles.reserveButton} ${styles.reserveButtonTop}`}
+          >
+            Book now!
+          </button>
+        </Link>
       </div>
       <div className={styles.about_container}>
         <div className={styles.about_column}>
@@ -37,17 +44,19 @@ export default function () {
           </div>
         </div>
       </div>
-      <div className = {styles.about_sentence}>
-      <div className={styles.about_content}>
+      <div className={styles.about_sentence}>
+        <div className={styles.about_content}>
           The monitoring software on the vest records the activity of the
           players (example: who targeted whom and how many times) and accurately
           issues, at the end of the game, a score sheet in real time, thanks to
           the most advanced radio system in the industry.
         </div>
-        </div>
-       <div className = {styles.reserveButtonBottomContainer}>
-        <button className={styles.reserveButton}>Book now!</button>
-        </div>
+      </div>
+      <div className={styles.reserveButtonBottomContainer}>
+        <Link href="/book">
+          <button className={styles.reserveButton}>Book now!</button>
+        </Link>
+      </div>
     </>
   );
 }

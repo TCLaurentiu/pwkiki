@@ -13,7 +13,6 @@ onAuthStateChanged(auth, (user)=>{
 if(user){
     Router.push("/")
 }
-
 })
 
 export default function Register(){

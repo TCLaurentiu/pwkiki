@@ -20,9 +20,9 @@ export default function Home() {
           <span className={styles.homeTitle}>
             <span>Laser Tag</span>
           </span>
-          <button className={styles.reserveButton}>
+          <Link href="/book"><button className={styles.reserveButton}>
             Book now for an amazing experience!
-          </button>
+          </button></Link>
         </div>
       </div>
       <div className={styles.useless_container}>
@@ -31,9 +31,8 @@ export default function Home() {
           knew about laser tag and let us convince you what it really means.
         </span>
         <span className={styles.useless_text}>
-          The idea is simple: it is "caught" with lasers in a high-tech
-          super-decor where you shoot yourself. More precisely, the
-          last-generation special vest that you will wear during the game is
+          More precisely, the
+          latest-generation special vest that you will wear during the game is
           equipped with sensors that detect if and how many times you have been
           shot. The weapon is completely painless, so you can come with your
           younger sister, your girlfriend or your mother. Of course, the coolest

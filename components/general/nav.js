@@ -1,8 +1,11 @@
 import Link from "next/link"
 import React, {useState} from "react"
 import {getAuth, onAuthStateChanged} from "firebase/auth"
-export default function Nav() {
 
+let admin_id = "5fDxbWiNi5cAU7mxvMmGAMI8iMx2";
+
+export default function Nav() {
+  let [is_admin, set_is_admin] = useState(false)
   let [is_logged_in, set_is_logged_in] = useState(false)
   let [user_data, set_user_data] = useState({
     email:null,
@@ -18,12 +21,14 @@ export default function Nav() {
 
     if(user){
       set_is_logged_in(true)
+      set_is_admin(admin_id == user.uid)
       set_user_data({
         email:user.email,
         uuid:user.uuid,
       })
     } else {
       set_is_logged_in(false)
+      set_is_admin(false)
     }
 
   })
@@ -49,10 +54,22 @@ export default function Nav() {
         <Link href="/packets">
           <a>Special offers</a>
         </Link>
+        {!!is_admin &&
+        <Link href = "/admin">
+          <a>Admin Panel</a>
+        </Link>
+
+        }
+
         {!!is_logged_in && (
+          <>
+          <Link href="/user">
+            <a><i class="fa-solid fa-user"></i> Your account </a>
+          </Link>
           <Link href="">
             <a onClick = {logout}>Logout({user_data.email})</a>
           </Link>
+          </>
         )
         }
         {!is_logged_in && (
