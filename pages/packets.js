@@ -88,6 +88,7 @@ export default function Packets() {
 
   return (
     <>
+      <title>Special offers</title>
       <PageHeader title="Special Offers" />
       <div className = {styles.packetsTop}>
       <span className = {styles.explanation}>Let us know your phone number and how many friends you'll bring with you, then click one of the available(blue) time intervals!</span>

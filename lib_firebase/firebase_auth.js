@@ -10,6 +10,8 @@ const firebaseConfig = {
   appId: "1:610059359725:web:c4fa4af8e943cba92443e4"
 };
 
-const fb_app = initializeApp(firebaseConfig)
 
-export const auth = getAuth(fb_app)
+
+const fb_app = initializeApp(firebaseConfig);
+
+export const auth = getAuth(fb_app);

@@ -70,6 +70,7 @@ export default function User() {
 
   return (
     <>
+      <title>Your account</title>
       <PageHeader title="User Panel" />
       <div className={styles.bookingContainer}>
         <div className={styles.bookingColumn}>

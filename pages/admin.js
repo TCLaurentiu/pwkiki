@@ -144,6 +144,7 @@ export default function Admin() {
 
   return (
     <>
+      <title>Admin panel</title>
       <PageHeader title="Admin panel" />
       <>
         <div className={styles.offerContainer}>

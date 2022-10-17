@@ -239,9 +239,10 @@ export default function Book() {
 
   return (
     <>
+      <title>Book a game</title>
       <PageHeader title="Book a game" />
       <div className = {styles.bookingTop}>
-      <span className = {styles.explanation}>Let us know your phone number and how many friends you'll bring with you, then click one of the available(blue) time intervals!</span>
+      <span className = {styles.explanation}>Only 10$ per person for half an hour of fun! Let us know your phone number and how many friends you'll bring with you, then click one of the available(blue) time intervals!</span>
         <input
           type="number"
           onChange={updatePhone}

@@ -61,6 +61,7 @@ export default function Register(){
 
     return (
         <>
+            <title>Register</title>
             <PageHeader title = "Create an account"/>
             <form onSubmit = {register} onChange = {updateRegisterData}>
                 <span>

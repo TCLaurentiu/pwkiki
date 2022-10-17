@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function () {
   return (
     <>
+      <title>About the game</title>
       <div className={styles.mini_title}>
         <span>About the game</span>
         <Link href="/book">
@@ -25,6 +26,7 @@ export default function () {
               • it uses a super equipment NEXUS PRO with ultra-bright LEDs in 8
               colors that weighs only 1.8 kg
             </span>
+            <span>• For only 10$/hour/person</span>
           </div>
         </div>
         <div className={styles.about_column}>

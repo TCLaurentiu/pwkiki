@@ -61,6 +61,7 @@ export default function Login(){
 
     return (
         <>
+            <title>Login</title>
             <PageHeader title = "Login to your account"/>
             <form onSubmit = {login} onChange = {updateLoginData}>
                 <span>
